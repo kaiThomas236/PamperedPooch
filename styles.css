@@ -159,6 +159,8 @@ h1 {
     .navbar-brand {
         line-height: 100%;
         margin: 0;
+        padding: 0;
+        padding-top: 1px;
     }
 
     .navbar-brand img {
