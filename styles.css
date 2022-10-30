@@ -1,0 +1,177 @@
+/******************************THEME DETAILS******************************/
+
+:root {
+    --dark-pink: #EC1D5F;
+    --medium-pink: #F76985;
+    --light-pink: #FCBACB;
+    --header-font: 'Birthstone Bounce', cursive;
+}
+
+/******************************TAG SELECTORS******************************/
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: var(--dark-pink);
+    text-shadow: 0 0 6px var(--light-pink);
+    font-family: var(--header-font);
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+/*****************************CLASS SELECTORS*****************************/
+
+::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: none;
+}
+
+.nav-container {
+    min-height: 56px;
+    max-height: 56px;
+    padding: 0 2%;
+    background-color: transparent;
+    z-index: 1;
+    position: absolute;
+}
+
+.navbar {
+    min-height: 56px;
+    max-height: 56px;
+}
+
+.navbar-brand {
+    line-height: 150%;
+    margin: 0;
+    margin-top: 150px;
+}
+
+.navbar-brand img {
+    height: 170px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: none;
+    --bs-navbar-toggler-border-color: var(--light-pink);
+    --bs-navbar-toggler-focus-width: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .drop-icon {
+    transform: scaleY(-1);
+    transition: transform 200ms ease;
+}
+
+.drop-icon {
+    color: var(--light-pink);
+    transition: transform 200ms ease;
+}
+
+.nav-bar a {
+    font-size: 1.35rem;
+    color: var(--light-pink);
+    text-decoration: none;
+    line-height: 100%;
+    padding: 0 10px;
+    transition: color 300ms ease, text-shadow 300ms ease;
+    
+}
+
+.navbar-collapse {
+    text-align: right;
+    width: fit-content;
+}
+
+.navbar a:hover,
+.navbar a:focus,
+.navbar a.active {
+    color: var(--dark-pink);
+    text-shadow: 0 0 2px var(--dark-pink);
+    transition: color 300ms ease, text-shadow 300ms ease;
+
+}
+
+.imgbox {
+    background-image: url("images/golden-dog-pink-collar.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.title {
+    text-align: center;
+    padding: 0 2%;
+    position: absolute;
+    /* top: 70%; */
+    bottom: 5%;
+}
+
+/*******************************ID SELECTORS*******************************/
+
+#navbarToggler01 {
+    transition: height 300ms ease;
+}
+
+/******************************MEDIA QUERIES******************************/
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 4rem;
+        font-weight: 500;
+    }
+    .title {
+        padding: 0;
+        bottom: 2%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2.9rem;
+        font-weight: 400;
+    }
+    .title {
+        padding: 0;
+        bottom: 2%;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        line-height: 150%;
+        margin: 0;
+    }
+    .navbar-collapse {
+        text-align: right;
+        width: fit-content;
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+        
+}
+
+@media screen and (min-width: 450px) {
+    p {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
