@@ -140,7 +140,10 @@ h2 {
 
 .section-box {
     padding: 3% 5%;
+    
 }
+
+
 
 .card-header {
     background-color: var(--light-pink);
@@ -153,13 +156,13 @@ h2 {
     border-width: 1px;
     border-color: var(--medium-pink);
     border-radius: var(--bs-card-inner-border-radius);
-    transition: border-radius 400ms ease;
+    transition: border-radius 400ms ease, all 150ms ease;
 
 }
 
 .card-header[aria-expanded="true"]:first-child {
     border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
-    transition: border-radius 400ms ease;
+    transition: border-radius 400ms ease, all 150ms ease;
 }
 
 .btn {
@@ -169,6 +172,7 @@ h2 {
     --bs-btn-hover-border-color: var(--medium-pink);
     --bs-btn-active-bg: var(--medium-pink);
     --bs-btn-active-border-color: var(--dark-pink);
+    transition: all 150ms ease;
 }
 
 .card-body ul {
@@ -183,14 +187,15 @@ h2 {
     border: none;
 }
 
-.card-header[aria-expanded="true"] .card-drop-icon {
+.card-header[aria-expanded="true"] .card-drop-icon-r,
+.card-header[aria-expanded="true"] .card-drop-icon-l {
     transform: scaleY(-1);
     transition: transform 200ms ease;
 }
 
-.card-drop-icon {
+.card-drop-icon-r,
+.card-drop-icon-l {
     position: absolute;
-    right: 2%;
     top: 17px;
     font-size: 1.5rem;
     color: var(--lightest-pink);
@@ -198,10 +203,24 @@ h2 {
     transition: transform 200ms ease;
 }
 
+.card-drop-icon-r {
+    right: 2%;
+}
+
+.card-drop-icon-l {
+    left: 2%;
+}
+
+
+
 /*******************************ID SELECTORS*******************************/
 
 #navbarToggler01 {
     transition: height 300ms ease;
+}
+
+#services {
+    transition: height 200ms ease;
 }
 
 /******************************MEDIA QUERIES******************************/
