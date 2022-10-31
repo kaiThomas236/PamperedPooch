@@ -14,6 +14,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     scroll-behavior: smooth;
+    color: black;
+    
 }
 
 h1 {
@@ -111,7 +113,7 @@ h2 {
 
 .navbar a:hover,
 .navbar a:focus,
-.navbar a.active {
+.navbar a:active {
     color: var(--dark-pink);
     text-shadow: 0 0px 2px var(--darkest-pink);
     transition: color 300ms ease, text-shadow 300ms ease;
@@ -140,21 +142,60 @@ h2 {
     padding: 3% 5%;
 }
 
-
 .card-header {
-    background-color: var(--medium-pink);
+    background-color: var(--light-pink);
+    border: solid;
+    border-color: var(--light-pink);
+    border-width: 2px;
 }
 
-.card-body {
-    height: 100%;
+.card-header:first-child {
+    border-width: 1px;
+    border-color: var(--medium-pink);
+    border-radius: var(--bs-card-inner-border-radius);
+    transition: border-radius 400ms ease;
+
+}
+
+.card-header[aria-expanded="true"]:first-child {
+    border-radius: var(--bs-card-inner-border-radius) var(--bs-card-inner-border-radius) 0 0;
+    transition: border-radius 400ms ease;
+}
+
+.btn {
+    --bs-btn-bg: var(--light-pink);
+    --bs-btn-border-color: var(--medium-pink);
+    --bs-btn-hover-bg: var(--medium-pink);
+    --bs-btn-hover-border-color: var(--medium-pink);
+    --bs-btn-active-bg: var(--medium-pink);
+    --bs-btn-active-border-color: var(--dark-pink);
 }
 
 .card-body ul {
     margin: auto 0;
 }
 
+/* .card-body {
+    height: fit-content;
+} */
+
 .card {
-    height: 100%;
+    border: none;
+}
+
+.card-header[aria-expanded="true"] .card-drop-icon {
+    transform: scaleY(-1);
+    transition: transform 200ms ease;
+}
+
+.card-drop-icon {
+    position: absolute;
+    right: 2%;
+    top: 17px;
+    font-size: 1.5rem;
+    color: var(--lightest-pink);
+    text-shadow: 0 0 2px black;
+    transition: transform 200ms ease;
 }
 
 /*******************************ID SELECTORS*******************************/
