@@ -212,15 +212,51 @@ h2 {
 }
 
 
+.map-wrapper {
+    height: 450px;
+    width: 700px;
+}
+
+
+.contact-col ul,
+.contact-col li,
+.icon-col ul,
+.icon-col li {
+    width: fit-content;
+    max-width: fit-content;
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact-col i {
+    display: inline;
+}
+
+.contact-col {
+    width: fit-content;
+    max-width: fit-content;
+
+}
+
+.icon-col {
+    color: var(--dark-pink);
+    padding-right: 0;
+    font-size: 3rem;
+    
+}
+
+.contact-col,
+.icon-col {
+    line-height: 8.2rem;
+    position: relative;
+    top: -2.4rem;
+}
+
 
 /*******************************ID SELECTORS*******************************/
 
 #navbarToggler01 {
     transition: height 300ms ease;
-}
-
-#services {
-    transition: height 200ms ease;
 }
 
 /******************************MEDIA QUERIES******************************/
