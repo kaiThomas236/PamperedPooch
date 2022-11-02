@@ -215,12 +215,15 @@ footer {
 }
 
 
+
+
+
+
 .map-wrapper {
     height: 450px;
     width: 550px;
     margin-bottom: 20px;
 }
-
 
 .contact-col ul,
 .contact-col li,
@@ -334,6 +337,26 @@ footer {
     }
 
 
+}
+
+@media screen and (max-width: 368px) {
+    .icon-col {
+        font-size: 1rem;
+    }
+    .contact-col,
+    .icon-col {
+        line-height: 2rem;
+        position: relative;
+    }
+
+    .contact-col {
+        padding-left: 2px;
+        font-size: 0.99rem;
+    }
+    
+    .second-col {
+        margin-bottom: -3rem;
+    }
 }
 
 @media screen and (max-width: 320px) {
