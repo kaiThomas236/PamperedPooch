@@ -32,7 +32,10 @@ h2 {
     margin-left: -3%;
 }
 
-
+footer {
+    color: var(--medium-pink);
+    text-align: center;
+}
 
 /*****************************CLASS SELECTORS*****************************/
 
@@ -214,7 +217,8 @@ h2 {
 
 .map-wrapper {
     height: 450px;
-    width: 700px;
+    width: 550px;
+    margin-bottom: 20px;
 }
 
 
@@ -228,9 +232,10 @@ h2 {
     padding-left: 0;
 }
 
-.contact-col i {
-    display: inline;
+.contact-col li {
+    margin-right: 0;
 }
+
 
 .contact-col {
     width: fit-content;
@@ -242,6 +247,7 @@ h2 {
     color: var(--dark-pink);
     padding-right: 0;
     font-size: 3rem;
+    text-align: center;
     
 }
 
@@ -253,6 +259,21 @@ h2 {
 }
 
 
+
+.second-row {
+    height: 100%;
+   
+}
+
+.second-col {
+    margin-bottom: -5.8rem;
+    padding-right: 0;
+}
+
+.footer {
+    margin: 0;
+}
+
 /*******************************ID SELECTORS*******************************/
 
 #navbarToggler01 {
@@ -260,6 +281,19 @@ h2 {
 }
 
 /******************************MEDIA QUERIES******************************/
+
+@media screen and (max-width: 979px) {
+    .contact-col,
+    .icon-col {
+        line-height: 5rem;
+        position: relative;
+        top: -1.5rem;
+    }
+    
+    .second-col {
+        margin-bottom: -3.8rem;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .navbar-brand {
