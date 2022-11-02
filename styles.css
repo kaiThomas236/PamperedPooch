@@ -222,6 +222,7 @@ footer {
 .map-wrapper {
     height: 450px;
     width: 550px;
+    max-width: 100%;
     margin-bottom: 20px;
 }
 
@@ -341,7 +342,7 @@ footer {
 
 @media screen and (max-width: 368px) {
     .icon-col {
-        font-size: 1rem;
+        font-size: 1.07rem;
     }
     .contact-col,
     .icon-col {
@@ -351,12 +352,15 @@ footer {
 
     .contact-col {
         padding-left: 2px;
-        font-size: 0.99rem;
+        padding-right: 0;
+        font-size: 0.97rem;
     }
     
     .second-col {
         margin-bottom: -3rem;
+        max-width: fit-content;
     }
+    
 }
 
 @media screen and (max-width: 320px) {
@@ -369,7 +373,7 @@ footer {
         padding: 0;
         bottom: 2%;
     }
-
+    
 
 }
 
