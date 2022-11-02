@@ -6,6 +6,7 @@
     --light-pink: #FCBACB;
     --lightest-pink: #FCDFE7;
     --header-font: 'Birthstone Bounce', cursive;
+    --bs-link-color: var(--dark-pink);
 }
 
 /******************************TAG SELECTORS******************************/
@@ -30,6 +31,12 @@ h2 {
     margin: 0;
     padding-bottom: 3%;
     margin-left: -3%;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #C3184E;
 }
 
 footer {
