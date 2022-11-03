@@ -161,8 +161,6 @@ footer {
     background-repeat: no-repeat;
 }
 
-
-
 .title {
     text-align: center;
     padding: 0 2%;
@@ -173,14 +171,24 @@ footer {
 
 
 .groomer-box .col {
-    height: 220px;
-    width: 220px;
+    height: fit-content;
+    width: 212px;
     text-align: center;
+    /* background-image: url("images/icon-image_blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
 }
 
 .groomer-box img {
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 220px;
+    width: 212px;
     z-index: 3;
     transition: opacity 400ms ease;
 }
@@ -194,21 +202,26 @@ footer {
 
 .groomer-box .col p {
     position: absolute;
-    margin-left: 0;
+    margin-left: 15px;
+    margin-top: -10px;
 }
 
 
 
 .groomer-box .inner-row {
     width: fit-content;
-    max-height: 220px;
+    height: fit-content;
 }
 
 .groomer-box .col-md-4 {
     width: fit-content;
-    padding-left: -10px!important;
+    padding-left: -10px;
 }
 
+.summary {
+    position: relative;
+    padding: 20px 20px;
+}
 
 
 
@@ -278,6 +291,11 @@ footer {
     color: var(--lightest-pink);
     transition: transform 200ms ease;
     text-shadow: 0.25px 0.25px 2px var(--dark-gray);
+}
+
+.card-header-text {
+    margin-bottom: 0;
+    margin-top: 1%;
 }
 
 
@@ -377,6 +395,12 @@ footer {
     
     .second-col {
         margin-bottom: -3.8rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .groomer-box .col-md-4 {
+        margin: 0 100px;
     }
 }
 
