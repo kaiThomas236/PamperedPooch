@@ -76,6 +76,8 @@ footer {
     text-align: center;
 }
 
+/* navbar */
+
 .nav-container {
     min-height: 56px;
     max-height: 56px;
@@ -152,6 +154,8 @@ footer {
 
 }
 
+/* home */
+
 .imgbox {
     background-image: url("images/golden-dog-pink-collar.jpg");
     width: 100vw;
@@ -168,7 +172,7 @@ footer {
     bottom: 5%;
 }
 
-
+/* about */
 
 .groomer-box .col {
     height: fit-content;
@@ -223,8 +227,7 @@ footer {
     padding: 20px 20px;
 }
 
-
-
+/* services */
 
 .card-header {
     background-color: var(--light-pink);
@@ -260,10 +263,6 @@ footer {
     margin: auto 0;
 }
 
-/* .card-body {
-    height: fit-content;
-} */
-
 .card {
     border: none;
     box-shadow: 0.5px 0.5px 2px var(--dark-gray);
@@ -298,12 +297,32 @@ footer {
     margin-top: 1%;
 }
 
+/* gallery */
 
 
 
+.carousel-item {
+    text-align: center;
+}
 
+.gallery-icon {
+    color: var(--dark-pink);
+    font-size: 2.5rem;
+}
 
+.gallery-box img {
+    max-width: 100%;
+}
 
+.carousel-control-next {
+    right: -10px;
+}
+
+.carousel-control-prev {
+    left: -10px;
+}
+
+/* contact */
 
 .map-wrapper {
     height: 450px;
@@ -372,6 +391,7 @@ footer {
     transition: text-shadow 200ms ease;
 }
 
+/* footer */
 
 .footer {
     margin: 0;
@@ -385,7 +405,7 @@ footer {
 
 /******************************MEDIA QUERIES******************************/
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 946px) {
     .contact-col,
     .icon-col {
         line-height: 5rem;
