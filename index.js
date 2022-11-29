@@ -1,34 +1,3 @@
-const colorThemes = document.querySelectorAll('[name="theme"]');
-const isFirefox = window.navigator.userAgent.indexOf("Firefox") > -1;
-const isIE = window.navigator.userAgent.indexOf("MSIE ") > -1 || !!navigator.userAgent.match(/Trident.*rv\:11\./);
-
-
-const storeTheme = function (theme) {
-    localStorage.setItem("theme", theme);
-}
-
-const getTheme = function () {
-    const activeTheme = localStorage.getItem("theme");
-
-    colorThemes.forEach((themeOption) => {
-        if (themeOption.id === activeTheme) {
-            themeOption.checked = true;
-        }
-    });
-    document.documentElement.className = activeTheme;
-};
-
-const backup = function (theme) {
-    document.documentElement.className = theme;
-};
-
-colorThemes.forEach(theme => {
-    theme.addEventListener('click', () => {
-        if (isFirefox || isIE) {
-            backup(theme.id);
-        }
-        storeTheme(theme.id);
-    });
-});
-
-document.onload = getTheme();
+function editHtml() { let contact = document.getElementById("contact"); let firstOuter = contact.getElementsByClassName("map-wrapper")[0]; let secondOuter = contact.getElementsByClassName("second-col")[0]; let firstInner = secondOuter.getElementsByClassName("icon-col")[0]; let secondInner = secondOuter.getElementsByClassName("contact-col")[0]; firstOuter.classList.remove("col-auto"); secondOuter.classList.remove("col-auto"); firstInner.classList.remove("col-auto"); secondInner.classList.remove("col-auto"); firstOuter.classList.add("col-6"); secondOuter.classList.add("col-6"); firstInner.classList.add("col-2"); secondInner.classList.add("col-10"); firstInner.classList.add("firefox-size"); secondInner.classList.add("firefox-size"); firstInner.parentElement.classList.add("firefox-parent") }
+function checkFirefox() { return (navigator.userAgent.indexOf("Firefox") > -1) }
+var isFirefox = checkFirefox(); if (isFirefox) { editHtml() }
